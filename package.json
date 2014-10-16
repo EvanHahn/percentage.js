@@ -2,11 +2,21 @@
   "name": "percentage",
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
   "version": "0.1.0",
+  "description": "percentage(0.12) == '12%'",
   "main": "percentage.js",
   "scripts": {
     "test": "mocha"
   },
   "devDependencies": {
     "mocha": "^1.21.5"
-  }
+  },
+  "keywords": [
+    "percentage", "percent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EvanHahn/percentage.js.git"
+  },
+  "bugs": "https://github.com/EvanHahn/percentage.js/issues",
+  "license": "MIT"
 }
