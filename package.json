@@ -1,0 +1,12 @@
+{
+  "name": "percentage",
+  "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+  "version": "0.1.0",
+  "main": "percentage.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  }
+}
