@@ -13,6 +13,8 @@ percentage(0.1234)     // "12%"
 percentage(0.1234, 0)  // "12%"
 percentage(0.1234, 1)  // "12.3%"
 percentage(0.1234, 2)  // "12.34%"
+
+percentage(Infinity)  // "∞%"
 ```
 
 In Node or Browserify or Webpack:
