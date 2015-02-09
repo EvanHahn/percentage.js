@@ -60,8 +60,8 @@ describe('percentage', function() {
   });
 
   it('converts infinity and negative infinity', function() {
-    equal(p(1 / 0), '∞%');
-    equal(p(-1 / 0), '-∞%');
+    equal(p(Infinity), '∞%');
+    equal(p(-Infinity), '-∞%');
   });
 
 });
