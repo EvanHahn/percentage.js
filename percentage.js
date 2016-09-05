@@ -11,9 +11,9 @@
     return number + '%'
   }
 
-  if (typeof module !== 'undefined') {
-    module.exports = percentage
-  } else {
+  if (typeof module === 'undefined') {
     this.percentage = percentage
+  } else {
+    module.exports = percentage
   }
 })()
