@@ -5,18 +5,27 @@
   "description": "percentage(0.12) == '12%'",
   "main": "percentage.js",
   "scripts": {
+    "pretest": "standard",
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0"
   },
   "keywords": [
-    "percentage", "percent"
+    "percentage",
+    "percent"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/EvanHahn/percentage.js.git"
   },
   "bugs": "https://github.com/EvanHahn/percentage.js/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "it",
+      "describe"
+    ]
+  }
 }
