@@ -1,19 +1,19 @@
 (function () {
-  function percentage (n, precision) {
-    var number
+  function percentage(n, precision) {
+    var number;
     if (n === Infinity) {
-      number = '∞'
+      number = "∞";
     } else if (n === -Infinity) {
-      number = '-∞'
+      number = "-∞";
     } else {
-      number = (Number(n) * 100).toFixed(precision || 0)
+      number = (Number(n) * 100).toFixed(precision || 0);
     }
-    return number + '%'
+    return number + "%";
   }
 
-  if (typeof module === 'undefined') {
-    this.percentage = percentage
+  if (typeof module === "undefined") {
+    this.percentage = percentage;
   } else {
-    module.exports = percentage
+    module.exports = percentage;
   }
-})()
+})();
