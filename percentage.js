@@ -1,19 +1,11 @@
-(function () {
-  function percentage(n, precision) {
-    var number;
-    if (n === Infinity) {
-      number = "∞";
-    } else if (n === -Infinity) {
-      number = "-∞";
-    } else {
-      number = (Number(n) * 100).toFixed(precision || 0);
-    }
-    return number + "%";
-  }
-
-  if (typeof module === "undefined") {
-    this.percentage = percentage;
+export default function percentage(n, precision = 0) {
+  let number;
+  if (n === Infinity) {
+    number = "∞";
+  } else if (n === -Infinity) {
+    number = "-∞";
   } else {
-    module.exports = percentage;
+    number = (Number(n) * 100).toFixed(precision);
   }
-})();
+  return number + "%";
+}

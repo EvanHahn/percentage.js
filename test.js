@@ -1,5 +1,5 @@
-var percentage = require(".");
-var assert = require("assert");
+import percentage from "./percentage.js";
+import assert from "assert";
 
 [
   [0.01, "1%"],
@@ -28,9 +28,7 @@ var assert = require("assert");
   ["-0.123", "-12%"],
   [Infinity, "∞%"],
   [-Infinity, "-∞%"],
-].forEach(function (testCase) {
-  var input = testCase[0];
-  var expected = testCase[1];
+].forEach(([input, expected]) => {
   assert.strictEqual(percentage(input), expected);
 });
 
@@ -42,6 +40,6 @@ assert.strictEqual(percentage(0.123456789, 7), "12.3456789%");
 assert.strictEqual(percentage(0.123456789, 8), "12.34567890%");
 assert.strictEqual(percentage(0.123456789, 10), "12.3456789000%");
 
-var n = new Number(0.12); // eslint-disable-line no-new-wrappers
+const n = new Number(0.12); // eslint-disable-line no-new-wrappers
 percentage(n);
 assert.strictEqual(n.valueOf(), 0.12);
