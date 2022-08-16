@@ -23,8 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/EvanHahn/percentage.js.git"
+    "url": "https://git.sr.ht/~evanhahn/percentage.js"
   },
-  "bugs": "https://github.com/EvanHahn/percentage.js/issues",
+  "bugs": {
+    "url": "https://todo.sr.ht/~evanhahn/percentage.js",
+    "email": "me@evanhahn.com"
+  },
   "license": "MIT"
 }
