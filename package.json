@@ -1,7 +1,7 @@
 {
   "name": "percentage",
   "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "percentage(0.12) == '12%'",
   "type": "module",
   "main": "percentage.js",
